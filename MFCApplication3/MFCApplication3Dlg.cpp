@@ -62,6 +62,7 @@ BEGIN_MESSAGE_MAP(CMFCApplication3Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDOK, &CMFCApplication3Dlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -150,3 +151,10 @@ HCURSOR CMFCApplication3Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CMFCApplication3Dlg::OnBnClickedOk()
+{
+	// TODO:  在此添加控件通知处理程序代码
+	CDialogEx::OnOK();
+}
